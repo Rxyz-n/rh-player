@@ -1,11 +1,18 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import { AudioContext } from './context/audio.context';
+import PlayingList from './components/PlayingList';
 
 function App() {
-  const audioCtx = useContext(AudioContext);
-  console.log(audioCtx);
-  return <div className="App">RH-player</div>;
+  return (
+    <div className="App">
+      <div className="player-container">
+        <div className="player-inner w-100 h-100 p-3">
+          <div className="player">Player</div>
+          <PlayingList />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;

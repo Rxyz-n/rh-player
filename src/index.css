@@ -1,5 +1,69 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
+  background: url('assets/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-container {
+  width: 77rem;
+  height: 37.5rem;
+  background: url('assets/background-player.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.player-inner {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  width: 64%;
+  background-color: red;
+}
+
+.playlist {
+  width: 35%;
+  letter-spacing: 0.5px;
+}
+
+.playlist .list-group {
+  height: calc(100% - 40px);
+  overflow: auto;
+}
+
+.list-group > .list-group-item {
+  border-radius: 4px;
+  background: #2e2e2ef2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item .item-name {
+  font-size: 1.15rem !important;
+}
+
+.list-group-item .singer {
+  font-size: 0.9rem;
 }
