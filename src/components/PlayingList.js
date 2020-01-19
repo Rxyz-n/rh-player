@@ -14,7 +14,9 @@ function PlayingList() {
             key={i}
             className={`list-group-item shadow-sm ${i < 9 ? 'mb-2' : ''}`}
           >
-            <i className="fas fa-play-circle fa-2x text-white-50 mr-3"></i>
+            <span className="item-status mr-3 font-weight-bold text-muted">
+              #{i + 1}
+            </span>
             <span className="d-inline-flex flex-column">
               <span className="name">Hold On & Believe</span>
               <span className="singer text-white-50">Martin Garrix</span>

@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.playlist:hover > ::-webkit-scrollbar {
+.playlist:hover ::-webkit-scrollbar {
   display: block;
 }
 
@@ -37,7 +37,7 @@
   background-color: hsla(0, 0%, 100%, 0.6);
 }
 
-.list-group > .list-group-item {
+.list-group .list-group-item {
   border-radius: 3px;
   background: #2e2e2ef2;
   cursor: pointer;
@@ -46,16 +46,16 @@
   transition: all 0.2s;
 }
 
-.fas.fa-play-circle {
-  transition: all 0.2s;
-}
-
-.list-group > .list-group-item:hover {
+.list-group .list-group-item:hover {
   /* #d50000f2 */
   background: #b71c1c;
 }
 
-.list-group > .list-group-item:hover i {
+span.item-status {
+  transition: 0.2s;
+}
+
+.list-group .list-group-item:hover span.item-status {
   color: #fff !important;
 }
 
