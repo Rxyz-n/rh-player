@@ -39,31 +39,17 @@ body {
 
 .player {
   width: 64%;
-  background-color: red;
-}
-
-.playlist {
-  width: 35%;
-  letter-spacing: 0.5px;
-}
-
-.playlist .list-group {
-  height: calc(100% - 40px);
-  overflow: auto;
-}
-
-.list-group > .list-group-item {
-  border-radius: 4px;
-  background: #2e2e2ef2;
-  cursor: pointer;
   display: flex;
   align-items: center;
+  padding: 0 3rem;
 }
 
-.list-group-item .item-name {
-  font-size: 1.15rem !important;
+.player #waveform {
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
 }
 
-.list-group-item .singer {
-  font-size: 0.9rem;
+#waveform wave {
+  cursor: pointer;
 }

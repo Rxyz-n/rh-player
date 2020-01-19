@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './PlayingList.css';
+
 function PlayingList() {
   return (
     <div className="playlist">
@@ -8,7 +10,10 @@ function PlayingList() {
       </h5>
       <ul className="list-group">
         {Array.from({ length: 10 }).map((_, i) => (
-          <li key={i} className={`list-group-item ${i < 9 ? 'mb-2' : ''}`}>
+          <li
+            key={i}
+            className={`list-group-item shadow-sm ${i < 9 ? 'mb-2' : ''}`}
+          >
             <i className="fas fa-play-circle fa-2x text-white-50 mr-3"></i>
             <span className="d-inline-flex flex-column">
               <span className="name">Hold On & Believe</span>

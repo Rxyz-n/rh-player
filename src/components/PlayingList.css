@@ -1,0 +1,68 @@
+.playlist {
+  width: 35%;
+  letter-spacing: 0.5px;
+}
+
+.playlist .list-group {
+  height: calc(100% - 40px);
+  overflow: auto;
+}
+
+.playlist:hover > ::-webkit-scrollbar {
+  display: block;
+}
+
+.list-group::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #232323;
+  display: none;
+}
+
+.list-group::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.list-group::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.list-group::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 7px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.list-group > .list-group-item {
+  border-radius: 3px;
+  background: #2e2e2ef2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.fas.fa-play-circle {
+  transition: all 0.2s;
+}
+
+.list-group > .list-group-item:hover {
+  /* #d50000f2 */
+  background: #b71c1c;
+}
+
+.list-group > .list-group-item:hover i {
+  color: #fff !important;
+}
+
+.list-group-item .item-name {
+  font-size: 1.15rem !important;
+}
+
+.list-group-item .singer {
+  font-size: 0.9rem;
+}
