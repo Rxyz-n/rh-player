@@ -8,15 +8,10 @@
   overflow: auto;
 }
 
-.playlist:hover ::-webkit-scrollbar {
-  display: block;
-}
-
 .list-group::-webkit-scrollbar {
   width: 10px;
   height: 10px;
   background: #232323;
-  display: none;
 }
 
 .list-group::-webkit-scrollbar-button {
@@ -46,16 +41,26 @@
   transition: all 0.2s;
 }
 
-.list-group .list-group-item:hover {
-  /* #d50000f2 */
+.list-group-item.active {
+  background: #d50000f2;
+  border-color: #d50000f2;
+}
+
+.list-group-item.active .singer {
+  color: #ffffffa3 !important;
+}
+
+.list-group-item:hover {
   background: #b71c1c;
 }
 
 span.item-status {
+  width: 12%;
   transition: 0.2s;
 }
 
-.list-group .list-group-item:hover span.item-status {
+.list-group-item:hover span.item-status span,
+.list-group-item.active .item-status {
   color: #fff !important;
 }
 

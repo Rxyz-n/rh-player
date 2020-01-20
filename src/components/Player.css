@@ -1,0 +1,53 @@
+.player {
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.player .spinner {
+  position: absolute;
+  z-index: 2080;
+}
+
+.player #waveform {
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+}
+
+#waveform wave {
+  cursor: pointer;
+}
+
+.player-actions {
+  margin-top: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-actions i {
+  cursor: pointer;
+  color: #ffffff99;
+  font-size: 1.3rem;
+  transition: all 0.2s;
+}
+
+.player-actions i.fa-play,
+.player-actions i.fa-pause {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.player-actions i.active {
+  color: #fff !important;
+}
+
+.player-actions i:hover {
+  color: #b71c1c;
+}
