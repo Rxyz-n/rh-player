@@ -8,7 +8,7 @@
 ## Usage
 
 - Clone this repo
-- Put your audios into `/public/playlist` folder
+- Put your audio files into `/public/playlist` folder
 - Install deps `npm install` and start the server `npm start`
 - Enjoy :)
 
